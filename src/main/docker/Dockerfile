@@ -33,6 +33,11 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | \
     tee /etc/apt/sources.list.d/yarn.list && \
     apt update && apt install yarn
+    
+#
+# Add PNPM package manager
+#
+RUN npm install -g pnpm@^8.0.0
 
 # Add Docker's official GPG key:
 RUN apt-get update && \

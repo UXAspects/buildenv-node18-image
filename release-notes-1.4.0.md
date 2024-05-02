@@ -5,4 +5,4 @@ ${version-number}
 
 #### New Features
 
-#### Known Issues
+- Adding support for PNPM package manager.
