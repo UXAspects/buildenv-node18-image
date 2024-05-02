@@ -37,7 +37,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | \
 #
 # Add PNPM package manager
 #
-RUN npm install -g pnpm
+RUN npm install -g pnpm@^8.0.0
 
 # Add Docker's official GPG key:
 RUN apt-get update && \
